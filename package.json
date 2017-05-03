@@ -1,0 +1,26 @@
+{
+  "name": "test-web-server",
+  "version": "1.0.0",
+  "description": "a simple web server for unit testing web clients.",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "bower install && grunt build",
+    "start": "node app.js",
+    "debug": "node --inspect-brk app.js",
+    "test": "node ./node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcwchu/test-web-server.git"
+  },
+  "author": "Johnson Chu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcwchu/test-web-server/issues"
+  },
+  "homepage": "https://github.com/jcwchu/test-web-server#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "express": "^4.15.2"
+  }
+}
